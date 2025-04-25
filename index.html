@@ -1,65 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dynamic Text Generator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-    }
-    input, button {
-      padding: 10px;
-      margin: 10px;
-      font-size: 16px;
-    }
-    #output {
-      margin-top: 20px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #0066cc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARSHITA S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            overscroll-behavior-y: none;
+        }
+    </style>
 </head>
 <body>
-  <h1>Dynamic Text Generator</h1>
-  <h6>Blank</h6>
-  <input type="text" id="userInput" placeholder="Enter your text here" />
-  <button onclick="generateText()">Generate</button>
+    <div class="bg-[#faf0e6]">
 
-  <div id="output"></div>
+        <div class="relative w-full h-28">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#f9e8ea] from-3% via-[#f09819] via-20% to-[#f793e2] to-90%">
+            <div class="flex justify-center left-1/2 mt-5">
+              <img
+                class="w-20 md:w-32 lg:w-48"
+                src="./images/signature.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#faf0e6]"></div>
+        </div>
+        <div class="p-5 md:p-10 lg:px-36 lg:py-0">
+          <div class="flex justify-between items-center">
+            <div class="font-poppins font-extrabold text-3xl w-1/2">
+              <div class="text-4xl md:text-7xl lg:text-8xl">
+               VARSHITA S
+              </div>
+              <div class="md:text-5xl lg:text-6xl">Reddy</div>
+            </div>
+            <div>
+              <img
+                class="freelancer md:w-56 lg:w-96"
+                src="./images/freelancer.svg"
+                alt=""
+              />
+            </div>
+          </div>
+  
+          <div>
+            <p class="font-poppins py-8 md:w-3/4 md:py-0 lg:w-[550px]">
+                A third-year CS enthusiast with a knack for coding across diverse domains. Eager to join a coding community, and seek new experiences with companies to apply their skills in real-world projects. Currently learning Web Development.
+            </p>
+          </div>
+        </div>
+        <div class="mt-10 lg:mt-28">
+          <div>
+            <div class="font-poppins text-center w-full text-5xl font-extrabold flex justify-center">
+              <span>Projects</span>
+              <img class="w-20 -mt-10" src="./images/projects.svg" alt="" />
+            </div>
+          </div>
+          <div class="font-poppins grid md:grid-cols-2 lg:grid-cols-3 lg:px-36 ">
+            <div class="flex flex-col p-5 my-5 max-w-sm">
+              <img
+                class="w-full rounded"
+                src="./images/image-gen.jpeg"
+                alt=""
+              />
+              <div class="text-xl font-roboto p-2">
+                Image Generation Application with CLIPDrop API
+                <span class="p-[3px] px-2 bg-slate-300 text-xs rounded">
+                  AI
+                </span>
+              </div>
+              <div class="px-2 text-justify">
+                Python-based image generation application that leverages the CLIPDrop API for text-to-image generation.
+              </div>
+              <div class="flex items-center justify-between py-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/varsh/image-generation"
+                >
+                  <button class="flex items-center justify-center p-2 border rounded space-x-2">
+                    <img class="w-8" src="./images/github-mark.svg" alt="" />
+                    <div>Github</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 my-5 max-w-sm">
+              <img
+                class="w-full h-48 rounded"
+                src="./images/quiz.jpeg"
+                alt=""
+              />
+              <div class="text-xl font-roboto p-2">
+                Quizizz
+                <span class="p-[3px] mx-2 px-2 bg-slate-300 text-xs rounded">
+                  Web Development
+                </span>
+              </div>
+              <div class="px-2 text-justify">
+                Simple web application that can be used to play custom quizzes.
+              </div>
+              <div class="flex items-center justify-between py-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/varsh/quizz"
+                >
+                  <button class="flex items-center justify-center p-2 border rounded space-x-2">
+                    <img class="w-8" src="./images/github-mark.svg" alt="" />
+                    <div>Github</div>
+                  </button>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-col-reverse items-center justify-center">
+          <div class="font-poppins text-center text-5xl font-extrabold flex justify-center mt-10">
+            Skills
+          </div>
+          <img
+            class="md:w-24 ml-60 md:ml-[80%]"
+            src="./images/moon.svg"
+            alt=""
+          />
+        </div>
+        <div class=" flex items-center space-x-8 md:space-x-16 lg:space-x-32 flex-wrap justify-center p-5 md:px-20 lg:px-48">
 
-  <script>
-    function generateText() {
-      const input = document.getElementById("userInput").value;
-      const outputDiv = document.getElementById("output");
+        <img class="w-12 m-5" src="./images/python-vertical.svg" alt="" />
+        <img class="w-12 m-5" src="./images/java-vertical.svg" alt="" />
+        <img class="w-12 m-5" src="./images/c-1.svg" alt="" />
+          <img class="w-20 m-5" src="./images/mysql-official.svg" alt="" />
+          <img class="w-20 m-5" src="./images/docker.svg" alt="" />
+          <img class="m-5" src="./images/git-scm-icon.svg" alt="" />
+        </div>
 
-      if (!input.trim()) {
-        outputDiv.innerText = "Please enter some text!";
-        return;
-      }
-
-      // Example transformation - You can customize this logic
-      const templates = [
-        `You said: "${input}" — that's deep!`,
-        `Here's a twist: "${input.toUpperCase()}"!`,
-        `Echoing back: ${input.split('').reverse().join('')}`,
-        `Wow, "${input}" sounds poetic.`,
-        `Processing complete: "${input}" has been stored in my neural heart.`
-      ];
-
-      // Pick a random output
-      const randomIndex = Math.floor(Math.random() * templates.length);
-      outputDiv.innerText = templates[randomIndex];
-    }
-  </script>
+        <div class="w-full flex flex-col-reverse items-center justify-center">
+          <div class="font-poppins text-center text-5xl font-extrabold flex justify-center mt-10">
+            Experience & Education
+          </div>
+          <img
+            class="w-28 lg:w-36 mr-48 md:mr-[80%]"
+            src="./images/sun.svg"
+            alt=""
+          />
+        </div>
+  
+        <div class="py-20 font-poppins md:flex items-center justify-between w-full lg:px-36">
+          <div>
+            <img class="max-w-[300px]" src="./images/studying.svg" alt="" />
+          </div>
+          <div class="font-poppins">
+            <div class="flex space-x-8 items-center p-5">
+              <img
+                class="w-10"
+                src="https://karunya.edu/sites/default/files/img/home/KITS-EMBLEM.png.pagespeed.ce.hVclQGVmrR.png"
+                alt=""
+              />
+              <div>
+                <div class="text-xs">2022 - 2026</div>
+                <div>B.Tech, Computer Science and Engineering</div>
+                <div class="text-sm">
+                  Karunya Institute of Technology and Sciences, Coimbatore
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="font-poppins text-center text-5xl font-extrabold flex justify-center md:justify-start md:px-20 mt-20">
+            Let's Connect!
+          </div>
+  
+          <div class="px-6 font-poppins md:flex items-center md:flex-row-reverse justify-between">
+            <div>
+              <img class="max-w-[300px]" src="./images/shaking-hands.svg" alt="" />
+            </div>
+            <div class="md:p-10 flex flex-col space-y-6">
+              <div class="text-justify">
+                I'm always looking to make a new connections, so drop me an email
+                or shoot me a DM on Linkedin.
+              </div>
+              <div>
+                Lets's explore the possibilities and see where it takes us!
+              </div>
+              <div class="flex items-center space-x-5">
+                <a href="mailto:arnoldanand.work@gmail.com">
+                  <button class="flex space-x-3 items-center bg-[#f79709] p-2 rounded-md">
+                    <span class="text-white">Contact Me</span>
+                    <span class="text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/varshita/"><img class="w-8" src="./images/linkedin.svg" alt="" /></a>
+                <a target="_blank" href="https://github.com/varsh/"><img class="w-8" src="./images/github-mark.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full h-28 mt-10">
+          <div class="absolute inset-0 bg-gradient-to-l from-[#f9e8ea] from-3% via-[#f09819] via-20% to-[#f793e2] to-90%">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-transparent to-[#faf0e6] "></div>
+        </div>
+      </div>
 </body>
 </html>
-
-
