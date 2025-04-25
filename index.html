@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Text Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Text Generator</h1>
+  
+  <input type="text" id="userInput" placeholder="Enter your text here" />
+  <button onclick="generateText()">Generate</button>
+
+  <div id="output"></div>
+
+  <script>
+    function generateText() {
+      const input = document.getElementById("userInput").value;
+      const outputDiv = document.getElementById("output");
+
+      if (!input.trim()) {
+        outputDiv.innerText = "Please enter some text!";
+        return;
+      }
+
+      // Example transformation - You can customize this logic
+      const templates = [
+        `You said: "${input}" — that's deep!`,
+        `Here's a twist: "${input.toUpperCase()}"!`,
+        `Echoing back: ${input.split('').reverse().join('')}`,
+        `Wow, "${input}" sounds poetic.`,
+        `Processing complete: "${input}" has been stored in my neural heart.`
+      ];
+
+      // Pick a random output
+      const randomIndex = Math.floor(Math.random() * templates.length);
+      outputDiv.innerText = templates[randomIndex];
+    }
+  </script>
+</body>
+</html>
